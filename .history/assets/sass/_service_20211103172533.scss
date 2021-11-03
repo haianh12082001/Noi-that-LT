@@ -1,0 +1,19 @@
+.service {
+    padding-bottom: 40px;
+    background: #18120b;
+    &__item {
+        position: relative;
+        top: 0;
+        left: 0;
+        .service1 {
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+        .service2 {
+            position: absolute;
+            top: 20px;
+            left: 17px;
+        }
+    }
+}

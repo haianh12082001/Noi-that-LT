@@ -1,0 +1,35 @@
+.header {
+    background: #18120b;
+
+    &__container {
+        position: relative;
+    }
+    &__menu {
+        padding: 19px 0;
+    }
+    &__bg--logo {
+        position: absolute;
+        top: -44px;
+        left: 0;
+        z-index: 88;
+        width: 200px;
+        // background-image: url("../img/nenlogo.png");
+    }
+    .img__logo {
+        position: absolute;
+        z-index: 89;
+        top: -30px;
+        left: 25px;
+    }
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__link {
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+    }
+}

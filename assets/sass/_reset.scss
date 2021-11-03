@@ -1,0 +1,33 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+h1,
+h2,
+p {
+    margin: 0;
+}
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    vertical-align: baseline;
+    // cursor: pointer;
+}
+img {
+    max-width: 100%;
+    // height: auto;
+    // display: block;
+}
+input {
+    outline: none;
+}

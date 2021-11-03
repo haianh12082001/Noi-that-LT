@@ -1,0 +1,18 @@
+.header {
+    &__container {
+        position: relative;
+    }
+    &__bg--logo {
+        position: absolute;
+        top: -44px;
+        left: 0;
+        z-index: 88;
+        // background-image: url("../img/nenlogo.png");
+    }
+    &__logo {
+        position: absolute;
+        z-index: 89;
+        top: -30px;
+        left: 27px;
+    }
+}

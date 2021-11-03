@@ -1,0 +1,40 @@
+.topbar {
+    background: #2e1501;
+    padding: 7px 0;
+
+    color: #fff;
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__left {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__right {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__icon {
+        display: flex;
+    }
+    &__phone {
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        i {
+            font-size: 13px;
+            margin-right: 8px;
+        }
+    }
+    &__email {
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        i {
+            font-size: 13px;
+            margin-right: 8px;
+        }
+    }
+}

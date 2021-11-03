@@ -1,0 +1,33 @@
+.topbar {
+    background: #2e1501;
+    color: #fff;
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__left {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__right {
+        display: flex;
+    }
+    &__icon {
+        display: flex;
+    }
+    &__phone {
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        i {
+            font-size: 13px;
+            color: linear-gradient(90deg, #d5ab71 0%, #fbe499 52.08%, #d1a86f 100%);
+        }
+    }
+    &__email {
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+    }
+}

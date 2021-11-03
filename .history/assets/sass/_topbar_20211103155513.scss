@@ -1,0 +1,76 @@
+.topbar {
+    background: #2e1501;
+    padding: 7px 0;
+
+    color: #fff;
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__left {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__right {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__icon {
+        display: flex;
+    }
+    &__item {
+        width: 27px;
+        height: 27px;
+
+        border: solid 3px transparent;
+        border-radius: 3px;
+        // border-width: 0.5px;
+        // border-style: solid;
+        // border-image: linear-gradient(#d4ab71, #fbe499, #d1a86f) 1;
+        background-color: #18120b;
+        background-clip: padding-box;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 5px;
+        position: relative;
+        box-sizing: border-box;
+        // z-index: 1;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+            margin: -3px;
+            border-radius: inherit;
+            background: linear-gradient(to right, red, orange);
+        }
+        i {
+            padding: 6px;
+            font-size: 10px;
+        }
+    }
+    &__phone {
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        i {
+            font-size: 13px;
+            margin-right: 8px;
+        }
+    }
+    &__email {
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        i {
+            font-size: 13px;
+            margin-right: 8px;
+        }
+    }
+}

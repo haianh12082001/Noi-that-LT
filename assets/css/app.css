@@ -1,0 +1,264 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  vertical-align: baseline;
+}
+
+img {
+  max-width: 100%;
+}
+
+input {
+  outline: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-size: 16px;
+  color: #fff;
+}
+
+.container {
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.spacing {
+  width: 234px;
+}
+
+.goldgr-color {
+  background-image: linear-gradient(90deg, #d5ab71 0%, #fbe499 52.08%, #d1a86f 100%);
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.heading__title {
+  font-weight: 700;
+  font-family: "Lora", sans-serif;
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.heading__img {
+  margin: 0 auto;
+  display: block;
+}
+
+.box__heading {
+  padding: 50px 0 45px;
+}
+
+.topbar {
+  background: #2e1501;
+  padding: 7px 0;
+  color: #fff;
+  border-bottom: 1px solid red;
+}
+.topbar__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.topbar__left {
+  display: flex;
+  justify-content: space-between;
+}
+.topbar__right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.topbar__icon {
+  display: flex;
+}
+.topbar__item {
+  width: 27px;
+  height: 27px;
+  border-radius: 3px;
+  border-width: 0.5px;
+  border-style: solid;
+  border-image: linear-gradient(#d4ab71, #fbe499, #d1a86f) 1;
+  background-color: #18120b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 5px;
+}
+.topbar__item i {
+  padding: 6px;
+  font-size: 10px;
+}
+.topbar__phone {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  margin-right: 60px;
+}
+.topbar__phone i {
+  font-size: 13px;
+  margin-right: 8px;
+}
+.topbar__email {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+}
+.topbar__email i {
+  font-size: 13px;
+  margin-right: 8px;
+}
+.topbar__seach {
+  position: relative;
+}
+.topbar__seach button {
+  border: none;
+  background: transparent;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+.topbar__seach input {
+  font-size: 12px;
+  width: 269px;
+  height: 27px;
+  max-width: 269px;
+  border-radius: 3px;
+  background: #6a4113;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  padding-left: 20px;
+}
+
+.header {
+  background: #18120b;
+}
+.header__container {
+  position: relative;
+}
+.header__menu {
+  padding: 19px 0;
+}
+.header__bg--logo {
+  position: absolute;
+  top: -44px;
+  left: 0;
+  z-index: 88;
+  width: 200px;
+}
+.header .img__logo {
+  position: absolute;
+  z-index: 89;
+  top: -30px;
+  left: 25px;
+}
+.header__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__link {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.banner .banner__img img {
+  width: 100%;
+  height: 602px;
+  object-fit: cover;
+}
+
+.service {
+  padding-bottom: 40px;
+  background: #18120b;
+}
+.service__content {
+  display: flex;
+}
+.service__item {
+  position: relative;
+  padding: 20px 17px;
+  max-width: 329px;
+  max-height: 450px;
+  height: 450px;
+}
+.service__item::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: url("../img/service/Rectangle 377.png");
+  z-index: 1;
+}
+.service__item::after {
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 85%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid;
+  border-image: linear-gradient(90deg, #d5ab71 0%, #fbe499 52.08%, #d1a86f 100%) 2;
+  z-index: 3;
+}
+.service__item .service__img {
+  position: relative;
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 2;
+}
+.service__name {
+  text-transform: uppercase;
+  font-family: "Lora", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 72%;
+  padding: 13px 0;
+  background: #555555;
+  text-align: center;
+  mix-blend-mode: multiply;
+  transform: translate(-50%, -50%);
+  z-index: 4;
+}
+
+/*# sourceMappingURL=app.css.map */

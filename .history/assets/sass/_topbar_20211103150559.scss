@@ -1,0 +1,16 @@
+.topbar {
+    background: #2e1501;
+    color: #fff;
+    &__container {
+        display: flex;
+    }
+    &__left {
+        display: flex;
+    }
+    &__right {
+        display: flex;
+    }
+    &__icon {
+        display: flex;
+    }
+}

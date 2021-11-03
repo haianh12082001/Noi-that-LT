@@ -1,0 +1,20 @@
+.service {
+    padding-bottom: 40px;
+    background: #18120b;
+    &__item {
+        position: relative;
+        // padding: 20px;
+
+        &::before {
+            position: absolute;
+            content: "";
+            width: 100%;
+            background-image: url("../img/service/Rectangle\ 377.png");
+        }
+        // .service2 {
+        //     position: absolute;
+        //     top: 20px;
+        //     left: 17px;
+        // }
+    }
+}

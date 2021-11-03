@@ -1,0 +1,38 @@
+.topbar {
+    background: #2e1501;
+    color: #fff;
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__left {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__right {
+        display: flex;
+    }
+    &__icon {
+        display: flex;
+    }
+    &__phone {
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        i {
+            font-size: 13px;
+            background-image: linear-gradient(to right, #D4AB71, #FBE499, #D1A86F);
+            background-size: 100%;
+            background-repeat: repeat;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        }
+    }
+    &__email {
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+    }
+}
