@@ -1,0 +1,20 @@
+.contact {
+    background: white;
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 60px;
+    }
+    &__info {
+        background: red;
+    }
+    &__title {
+        text-transform: uppercase;
+    }
+}
+.form__control {
+    width: 100%;
+}
+textarea {
+    width: 100%;
+}

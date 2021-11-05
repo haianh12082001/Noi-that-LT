@@ -1,0 +1,64 @@
+.feedback {
+    // height: 500px;
+    background-image: url("../img/feedback/Rectangle\ 11\ \(1\).png");
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background: #6a4113;
+        mix-blend-mode: multiply;
+        z-index: 1;
+    }
+    .box__heading {
+        position: relative;
+        z-index: 2;
+    }
+    &__container {
+        position: relative;
+        z-index: 1;
+    }
+    &__item {
+        // // height: 500px;
+        // position: relative;
+    }
+    &__img img {
+        max-height: 244px;
+        height: 244px;
+        border-radius: 8px;
+    }
+    &__img {
+        position: relative;
+        &::before {
+            content: "";
+
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin-bottom: 20px;
+            padding: 10px;
+            border-radius: 50%;
+            border: 2px solid transparent;
+            background: linear-gradient(to right, #fff, #fff), linear-gradient(#db9f06, #e6c64b, #db9f06);
+            background-clip: padding-box, border-box;
+            background-origin: padding-box, border-box;
+        }
+        i {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+    &__text {
+        text-align: center;
+        padding-top: 14px;
+    }
+}

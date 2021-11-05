@@ -1,0 +1,17 @@
+.news {
+    margin-bottom: 40px;
+    .posts__item {
+        display: flex;
+        margin-top: 32px;
+        img {
+            width: 176px;
+            height: 132px;
+            margin-right: 32px;
+        }
+    }
+    &__title {
+        font-weight: bold;
+        font-size: 18px;
+        text-align: justify;
+    }
+}

@@ -1,0 +1,12 @@
+.banner {
+    .banner__img {
+        img {
+            width: 100%;
+            height: 602px;
+            // object-fit: cover;
+            @include maxWidth(768px) {
+                height: 321px;
+            }
+        }
+    }
+}

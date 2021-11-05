@@ -1,0 +1,58 @@
+.villa {
+    background: #18120b;
+
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-image: url("../img/villa/Group\ 254.png");
+        background: #18120b;
+        opacity: 0.3;
+        mix-blend-mode: multiply;
+    }
+    &__container {
+        display: flex;
+        padding: 0 45px;
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 15px;
+        margin-bottom: 45px;
+    }
+    &__item {
+        height: 301px;
+        padding-left: 0;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            height: 46px;
+            width: calc(100% - 17px);
+            bottom: 1px;
+            left: 1px;
+            right: 1px;
+            background: #555555;
+            mix-blend-mode: multiply;
+        }
+    }
+    &__img {
+        width: 100%;
+        height: 100%;
+        border: 1px solid;
+        border-width: 0.5px;
+        border-style: solid;
+        border-image: linear-gradient(#d4ab71, #fbe499, #d1a86f) 1;
+    }
+    &__name {
+        position: absolute;
+        content: "";
+        bottom: 13px;
+        left: 22px;
+        line-height: 18px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+    &__button {
+    }
+}

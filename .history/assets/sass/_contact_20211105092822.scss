@@ -1,0 +1,11 @@
+.contact {
+    background: white;
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 60px;
+    }
+}
+.form__control {
+    width: 100%;
+}

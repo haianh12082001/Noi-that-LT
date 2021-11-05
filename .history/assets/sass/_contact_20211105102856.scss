@@ -1,0 +1,77 @@
+.contact {
+    background: white;
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 60px;
+    }
+    &__info {
+        background: #2e1501;
+        border: 1px solid #ccc;
+    }
+    &__title {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 28px;
+        text-align: center;
+    }
+    &__info {
+        padding-top: 20px;
+    }
+    button {
+        border: none;
+        background: transparent;
+        margin: 0 auto;
+    }
+}
+.form__control,
+textarea {
+    width: 100%;
+    font-size: 14px;
+    padding: 16px 8px;
+    border: none;
+    border-radius: 0;
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    border-image: linear-gradient(to right, #d5ab71, #fbe499, #d1a86f) 1;
+    outline: none;
+    box-shadow: none;
+}
+textarea {
+    width: 100%;
+}
+.form {
+    background: #fff;
+    padding-top: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.form__button {
+    background: #2e1501;
+    width: 160px;
+    height: 43px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    &::after {
+        content: "";
+        top: 0;
+        left: -28px;
+        position: absolute;
+        border-width: 21.5px 14px;
+        border-style: solid;
+        border-color: transparent #2e1501 transparent transparent;
+    }
+    &::before {
+        content: "";
+        top: 0;
+        right: -28px;
+        position: absolute;
+        border-width: 21.5px 14px;
+        border-style: solid;
+        border-color: transparent transparent #2e1501 transparent;
+    }
+}
+.form__link {
+    color: #fff;
+}

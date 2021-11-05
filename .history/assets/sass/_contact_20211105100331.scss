@@ -1,0 +1,37 @@
+.contact {
+    background: white;
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 60px;
+    }
+    &__info {
+        background: #2e1501;
+        border: 1px solid #ccc;
+    }
+    &__title {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 28px;
+        text-align: center;
+    }
+    &__info {
+        padding-top: 20px;
+    }
+}
+.form__control {
+    width: 100%;
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+    padding: 16px 8px;
+    border: none;
+    border-radius: 0;
+    border-width: 0 0 1 px 0;
+    border-style: solid;
+    border-image: linear-gradient(to right, #db9f06, #e6c64b, #db9f06) 1;
+    outline: none;
+    box-shadow: none;
+}
+textarea {
+    width: 100%;
+}

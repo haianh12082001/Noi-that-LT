@@ -1,0 +1,34 @@
+.news {
+    margin-bottom: 40px;
+    .posts__item {
+        display: flex;
+        margin-top: 32px;
+        img {
+            width: 176px;
+            height: 132px;
+            margin-right: 32px;
+        }
+    }
+    &__title {
+        font-weight: bold;
+        font-size: 18px;
+        text-align: justify;
+        padding-right: 40px;
+        line-height: 24px;
+        margin-bottom: 5px;
+    }
+    &__time {
+        font-size: 14px;
+        margin-left: 5px;
+    }
+    &__des {
+        font-size: 14px;
+        line-height: 24;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        word-break: break-word;
+    }
+}

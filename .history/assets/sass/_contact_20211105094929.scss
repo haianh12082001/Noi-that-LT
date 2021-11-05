@@ -1,0 +1,22 @@
+.contact {
+    background: white;
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 60px;
+    }
+    &__info {
+        // background: red;
+        border-radius: 1px solid #ccc;
+    }
+    &__title {
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+}
+.form__control {
+    width: 100%;
+}
+textarea {
+    width: 100%;
+}

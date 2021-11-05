@@ -1,0 +1,8 @@
+.feedback {
+    background-image: url("../img/feedback/Rectangle\ 11\ \(1\).png");
+    height: 500px;
+    position: relative;
+    &::before {
+        position: absolute;
+    }
+}
