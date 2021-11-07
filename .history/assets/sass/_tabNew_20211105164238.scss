@@ -1,0 +1,121 @@
+.tabNew {
+    padding-bottom: 40px;
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__content {
+        // box-shadow: 0 0 10px rgba($color: white, $alpha: 0.5);
+        // border: 1px solid #ccc;
+        padding-top: 20px;
+    }
+    .page__title {
+        font-size: 28px;
+        line-height: 1.4;
+        margin: 16px 0;
+    }
+    .box__border {
+        padding-top: 20px;
+        padding-left: 20px;
+        .post {
+            padding: 20px 0;
+            border-bottom: 1px solid #fdd869;
+            img {
+                width: 100%;
+                height: 170px;
+                object-fit: cover;
+            }
+            .post__name {
+                color: #fdd869;
+                text-align: justify;
+                font-size: 14px;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                word-break: break-word;
+                margin: 16px 0;
+            }
+        }
+    }
+    .category__title {
+        border-bottom: 2px solid;
+        font-size: 17px;
+        padding-bottom: 7px;
+        color: #fdd869;
+        text-transform: uppercase;
+        margin: 17px 0;
+    }
+    .catalog {
+        // list-style: disc;
+        padding: 0 30px;
+        li {
+            list-style: disc;
+            padding: 5px 0;
+            color: #fdd869;
+            a {
+                color: #fdd869;
+            }
+        }
+    }
+}
+
+.article__main strong {
+    color: #fdd869;
+    font-weight: bold;
+}
+.article {
+    &__content {
+        text-align: justify;
+        p {
+            line-height: 23px;
+            margin: 16px 0;
+        }
+    }
+    &__main .img {
+        padding: 0 30px;
+        text-align: center;
+        img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+    }
+    &__main {
+        .date {
+            display: flex;
+            font-size: 13px;
+        }
+    }
+}
+.related {
+    &__title {
+        padding: 10px 0;
+        border: 1px solid #fdd869;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+    &__name {
+        font-weight: bold;
+        line-height: 19px;
+        padding: 14px 0;
+    }
+    &__text {
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        color: #fff;
+        line-height: 24px;
+        font-weight: 400;
+        margin-bottom: 8px;
+        i {
+            margin-right: 6px;
+        }
+    }
+    &__img img {
+        width: 100%;
+        height: 180px;
+    }
+}

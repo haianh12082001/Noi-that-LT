@@ -1,0 +1,15 @@
+.tabNew {
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+.article__main strong {
+    color: #fdd869;
+    font-weight: bold;
+}
+.article {
+    &__content {
+        text-align: justify;
+    }
+}

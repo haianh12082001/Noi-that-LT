@@ -1,0 +1,31 @@
+.tabProduct {
+}
+.tab__list {
+    a {
+        background: #18120b;
+        border-bottom: 1px solid #6a4113;
+        border-radius: 0;
+        color: $color-tab;
+        cursor: pointer;
+        display: block;
+        font-family: roboto;
+        font-size: 14px;
+        transition: none;
+        line-height: 26px;
+        padding: 5px 9px;
+        position: relative;
+        text-decoration: none;
+        margin: 8px 17px;
+        border-top: 1px solid #6a4113;
+        height: 37px;
+        z-index: 109;
+        display: inline-block;
+        width: auto;
+        &::after {
+            border-right: 1.47px solid #6a4113;
+            right: -14px;
+            top: 4px;
+            border-bottom: 1.47px solid #6a4113;
+        }
+    }
+}

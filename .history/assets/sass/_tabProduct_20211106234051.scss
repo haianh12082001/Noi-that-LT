@@ -1,0 +1,25 @@
+.tabProduct {
+}
+.tab__list {
+    a {
+        background: #18120b;
+        border-bottom: 1 px solid #6a4113;
+        border-radius: 0;
+        color: #fdd869;
+        cursor: pointer;
+        display: block;
+        font-family: roboto;
+        font-size: 14px;
+        transition: none;
+        line-height: 26px;
+        padding: 5 px 9 px;
+        position: relative;
+        text-decoration: none;
+        margin: 8 px 17 px;
+        border-top: 1 px solid #6a4113;
+        height: 37 px;
+        z-index: 109;
+        display: inline-block;
+        width: auto;
+    }
+}
