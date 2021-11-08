@@ -1,0 +1,137 @@
+.header {
+    background: #18120b;
+    // height: 62px;
+    position: sticky;
+    top: 42px;
+    z-index: 99;
+    border-bottom: 4px solid #6a4113;
+    @include maxWidth(768px) {
+        top: 0;
+    }
+    &__container {
+        position: relative;
+        @include maxWidth(768px) {
+            height: 62px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+    &__item {
+        position: relative;
+    }
+    &__menu {
+        padding: 19px 0;
+        @include maxWidth(768px) {
+            position: absolute;
+            z-index: 80;
+            background: #18120b;
+            min-width: 280px;
+            left: 0;
+            top: 62px;
+            // display: block;
+            padding: 15px;
+            box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+            transition: all 0.3s ease-in-out;
+            // height: calc(100vh - 62px);
+            // overflow-y: auto;
+            transform: translateX(-100%);
+            .spacing {
+                width: 0;
+            }
+            .header__list {
+                display: block;
+                height: calc(100vh - 62px);
+                overflow-y: auto;
+                z-index: 99;
+            }
+            .header__item {
+                padding: 16px 0;
+                border-bottom: 1px solid #555;
+            }
+        }
+    }
+    &__bg--logo {
+        position: absolute;
+        top: -44px;
+        left: 0;
+        z-index: 88;
+        width: 200px;
+        // background-image: url("../img/nenlogo.png");
+        @include maxWidth(768px) {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        @include maxWidth(480px) {
+            width: 120px;
+            top: -20px;
+            height: 110px;
+            display: none;
+        }
+    }
+    .img__logo {
+        position: absolute;
+        z-index: 89;
+        top: -30px;
+        left: 25px;
+        @include maxWidth(768px) {
+            left: 50%;
+            transform: translateX(-50%);
+            top: 5px;
+            width: 120px;
+            height: 90px;
+        }
+        @include maxWidth(576px) {
+            width: 90px;
+            height: 60px;
+        }
+    }
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__link {
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .bar__mobi,
+    .seach__mobi {
+        display: none;
+    }
+    @include maxWidth(768px) {
+        .bar__mobi,
+        .seach__mobi {
+            display: block;
+            font-size: 28px;
+        }
+    }
+}
+@include maxWidth(768px) {
+    .space {
+        display: none;
+    }
+}
+.item {
+    margin-bottom: 20px;
+}
+.header__menu.active {
+    transform: translateX(0);
+}
+.close {
+    display: none;
+}
+.active .close {
+    display: block;
+}
+.active .bar {
+    display: none;
+}
+
+.sub__menu {
+    position: absolute;
+    background: black;
+    // mix-blend-mode: multiply;
+}

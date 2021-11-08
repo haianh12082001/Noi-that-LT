@@ -1,0 +1,14 @@
+.productDetails {
+    &__info {
+        margin-top: 20px;
+        .info__content {
+            background: transparent;
+            border: 1px solid #663e12;
+            padding: 20px;
+            overflow: hidden;
+        }
+        .full {
+            border-top: 0.2px solid #e7e7e7;
+        }
+    }
+}

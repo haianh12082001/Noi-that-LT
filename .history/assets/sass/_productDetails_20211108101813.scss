@@ -1,0 +1,31 @@
+.productDetails {
+    &__info {
+        margin-top: 20px;
+        .info__content {
+            background: transparent;
+            border: 1px solid #663e12;
+            padding: 20px 40px;
+            overflow: hidden;
+        }
+        .full {
+            border-top: 1px solid #e7e7e7;
+            line-height: 40px;
+            &:first-child,
+            &:nth-child(2) {
+                border-top: none;
+            }
+        }
+        .ele {
+            font-size: 15px;
+        }
+        .ele__left {
+            min-width: 95px;
+            i {
+                color: #c89214;
+            }
+        }
+        .ele__right {
+            margin-left: 20px;
+        }
+    }
+}
