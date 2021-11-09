@@ -2,6 +2,8 @@
 ::before,
 ::after {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 html {
@@ -24,6 +26,7 @@ li {
 a {
   text-decoration: none;
   vertical-align: baseline;
+  color: #fff;
 }
 a:hover {
   text-decoration: none;
@@ -38,6 +41,11 @@ img {
 
 input {
   outline: none;
+}
+
+input:focus {
+  outline: 0;
+  box-shadow: none;
 }
 
 body {
@@ -415,6 +423,35 @@ body {
     display: none;
   }
 }
+#seach__top {
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  top: 70px;
+  right: -100%;
+  transition: all 0.3s;
+}
+@media screen and (max-width: 768px) {
+  #seach__top.active {
+    right: 0;
+  }
+}
+
+.form-control,
+.btn__submit {
+  background: #1a1a1a;
+  border-color: #666;
+  color: #fff;
+}
+
+.btn__submit {
+  padding: 5px 10px;
+}
+
+.form-control:focus {
+  box-shadow: none;
+}
+
 .banner .banner__img img {
   width: 100%;
   height: 602px;
@@ -1023,6 +1060,41 @@ body {
   height: 180px;
 }
 
+.productDetails__appendix {
+  border: 1px solid #663e12;
+  border-radius: 4px;
+  position: relative;
+  padding: 10px;
+  padding-left: 20px;
+  margin-top: 20px;
+  height: 50px;
+}
+
+.productDetails__appendix.active {
+  height: auto;
+}
+
+.appendix__toggle {
+  position: absolute;
+  right: 10px;
+  width: 16px;
+  height: 16px;
+}
+.appendix__nav {
+  padding: 20px 0px;
+  position: relative;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: all 0.3s linear;
+  overflow: hidden;
+}
+.appendix__nav.active {
+  transform: scaleY(1);
+}
+.appendix__list li {
+  line-height: 34px;
+}
+
 .breadcrumb {
   padding: 20px 0;
   background: transparent;
@@ -1276,7 +1348,7 @@ textarea {
 .footer__container {
   position: relative;
   z-index: 2;
-  padding: 40px 0;
+  padding: 40px 15px;
 }
 .footer__title {
   font-size: 18px;
@@ -1294,6 +1366,7 @@ textarea {
   margin: 0 auto;
   padding: 0 15px;
   border: 1px solid #e4e4e4;
+  margin-bottom: 40px;
 }
 .footer__name {
   font-family: "UTM";

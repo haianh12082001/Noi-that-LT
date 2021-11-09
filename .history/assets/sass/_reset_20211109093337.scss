@@ -1,0 +1,46 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+h1,
+h2,
+p {
+    margin: 0;
+}
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    vertical-align: baseline;
+    color: $text-color;
+    // cursor: pointer;
+    &:hover {
+        text-decoration: none;
+        color: #fff;
+    }
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+input {
+    // outline: none;
+    outline: 0;
+    box-shadow: none;
+}
+input:focus {
+    outline: 0;
+    box-shadow: none;
+}
