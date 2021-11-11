@@ -56,12 +56,12 @@ $(document).ready(function () {
     speed: 2000,
     autoplaySpeed: 3000,
     focusOnSelect: true,
-    pauseOnHover: true,
+    pauseOnHover: true
     responsive: [
       {
         breakpoint: 576,
         settings: {
-          slidesToShow: 4,
+          slidesToShow: 2,
           slidesToScroll: 1,
           arrows: false,
           autoplay: true,

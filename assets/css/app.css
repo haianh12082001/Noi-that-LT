@@ -1007,7 +1007,7 @@ body {
   padding-top: 11px;
 }
 .news .nav__img {
-  min-width: 108px;
+  max-width: 108px;
   height: 80px;
   position: relative;
 }
