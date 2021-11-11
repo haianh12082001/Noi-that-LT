@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Montserrat:wght@500&family=Roboto:wght@400;500;700;900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="../assets/fonts/fontawesome-free-5.15.3/css/all.min.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+            integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+        <link rel="stylesheet" href="../assets/css/star-rating-svg.css" />
+        <link rel="stylesheet" href="../assets/css/app.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+    </head>
+    <body>
+        <div class="opacity__menu"></div>
+        <div class="topbar">
+            <div class="topbar__container container">
+                <div class="topbar__left">
+                    <div class="spacing"></div>
+                    <div class="topbar__phone">
+                        <i class="fas fa-phone-alt goldgr-color"></i>
+                        Hotline: <b>0919.954.555</b>
+                    </div>
+                    <div class="topbar__email">
+                        <i class="fas fa-envelope goldgr-color"></i>
+                        Email: <b>info@demo.com</b>
+                    </div>
+                </div>
+                <div class="topbar__right">
+                    <div class="topbar__seach">
+                        <input type="text" name="" id="" placeholder="Nhập từ khoá" />
+                        <button class="button-seach">
+                            <i class="fas fa-search goldgr-color"></i>
+                        </button>
+                    </div>
+                    <ul class="topbar__icon">
+                        <li class="topbar__item">
+                            <i class="fab fa-facebook-f goldgr-color"></i>
+                        </li>
+                        <li class="topbar__item">
+                            <i class="fab fa-twitter goldgr-color"></i>
+                        </li>
+                        <li class="topbar__item">
+                            <i class="fab fa-instagram goldgr-color"></i>
+                        </li>
+                        <li class="topbar__item">
+                            <i class="fab fa-youtube goldgr-color"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <header class="header">
+            <div class="header__container container">
+                <div class="nav__bar bar__mobi">
+                    <i class="fas fa-bars goldgr-color bar"></i>
+                    <i class="fas fa-times goldgr-color close"></i>
+                </div>
+                <div class="header__logo">
+                    <img src="../assets/img/nenlogo.png" alt="" class="header__bg--logo" />
+                    <img src="../assets/img/logo-final 1.png" alt="" class="img__logo" />
+                </div>
+                <div class="header__menu">
+                    <ul class="header__list">
+                        <li class="spacing"></li>
+                        <li class="header__item">
+                            <a href="../page/tab__news.html" class="header__link goldgr-color">Giới thiệu</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#" class="header__link goldgr-color">Dịch vụ</a>
+                            <i class="fas fa-chevron-right show__open"></i>
+                            <ul class="sub__menu">
+                                <li class="sub__item">
+                                    <a href="../page/tab_contact.html" class="sub__link goldgr-color">Liên hệ</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="header__item">
+                            <a href="#" class="header__link goldgr-color">Mẫu biệt thự đẹp</a>
+                            <i class="fas fa-chevron-right show__open"></i>
+                            <ul class="sub__menu">
+                                <li class="sub__item">
+                                    <a href="../page/tab__product.html" class="sub__link  goldgr-color">Biệt thự vườn</a>
+                                </li>
+                                <li class="sub__item">
+                                    <a href="../page/tab__product.html" class="sub__link  goldgr-color">Biệt thự tân cổ điển</a>
+                                </li>
+                                <li class="sub__item">
+                                    <a href="../page/tab__product.html" class="sub__link  goldgr-color">Dinh thự đẹp</a>
+                                </li>
+                                <li class="sub__item">
+                                    <a href="../page/tab__product.html" class="sub__link  goldgr-color">Biệt thự 1 tầng</a>
+                                </li>
+                                <li class="sub__item">
+                                    <a href="../page/tab__product.html" class="sub__link  goldgr-color">Biệt thự 2 tầng</a>
+                                </li>
+                                <li class="sub__item">
+                                    <a href="../page/tab__product.html" class="sub__link  goldgr-color">Biệt thự 3 tầng</a>
+                                </li>    
+                            </ul>
+                        </li>
+                        <li class="header__item">
+                            <a href="#" class="header__link goldgr-color">Mẫu nội thất đẹp</a>
+                            <i class="fas fa-chevron-right show__open"></i>
+                            <ul class="sub__menu">
+                                <li class="sub__item">
+                                    <a href="../page/tab__product.html" class="sub__link  goldgr-color">Nội thất hiện đại</a>
+                                </li>
+                                <li class="sub__item">
+                                    <a href="../page/tab__product.html" class="sub__link  goldgr-color">Nội thất tân cổ điển</a>
+                                </li>
+                                <li class="sub__item">
+                                    <a href="../page/tab__product.html" class="sub__link  goldgr-color">Nội thất biệt thự</a>
+                                </li>
+                                <li class="sub__item">
+                                    <a href="../page/tab__product.html" class="sub__link  goldgr-color">Nội thất nhà phố</a>
+                                </li>
+                                <li class="sub__item">
+                                    <a href="../page/tab__product.html" class="sub__link  goldgr-color">Nội thất chung cư</a>
+                                </li>
+                                <li class="sub__item">
+                                    <a href="../page/tab__product.html" class="sub__link  goldgr-color">Biệt thự 3 tầng</a>
+                                </li>
+                                
+                            </ul>
+                        </li>
+                        <li class="header__item">
+                            <a href="#" class="header__link goldgr-color">thi công xây dựng</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#" class="header__link goldgr-color">Xưởng sản xuất</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#" class="header__link goldgr-color">Tin tức sự kiện</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="seach__mobi">
+                    <i class="fas fa-search goldgr-color"></i>
+                </div>
+            </div>
+            <form action="" method="get" id="seach__top">
+                    <div class="input-group">
+                    <input type="text" name="keywords" class="form-control" placeholder="Từ khoá tìm kiếm">
+                    <div class="input__submit">
+                        <button type="submit" class="btn__submit">
+                            <i class="fas fa-search"></i>   
+                    </div>
+                    </div>
+            </form>
+        </header>
+        <ol class="breadcrumb container">
+            <li class="breadcrumb-item">
+                <a href="../index.html"> Trang chủ </a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">Tin tức</li>
+        </ol>
+        <section class="tabNew tabDetails">
+            <div class="tabDetails__container container">
+                <div class="tabDetails__content col-lg-9">
+                    <div class="article__main">
+                        <h1 class="page__title">[BST] 20+ Mẫu Khách Sạn Tân Cổ Điển Đẹp Nhất - Hot nhất 2021</h1>
+                        <div class="date">
+                            <div class="post__item">
+                                <i class="fa fa-user"></i>
+                                Đăng bởi
+                                <span>Hai Anh</span>
+                            </div>
+                            <div class="time">05/11/2021</div>
+                        </div>
+                        <div class="article__content">
+                            <p>
+                                Bộ sưu tập 20+ Mẫu Khách sạn hot nhất 2021 do Hội Kiến trúc sư tuyển chọn được xem là những thiết kế Khách sạn đẹp nhất, hot
+                                nhất mọi thời đại.
+                            </p>
+                            <p>
+                                Những công trình Khách sạn đẹp mang vẻ đẹp thanh thoát, sang trọng và cả sự cổ kính của kiến trúc Tân cổ điển, chắc chắn sẽ là ý
+                                tưởng tuyệt vời để bạn lựa chọn và thiết kế cho công trình khách sạn của mình. Cùng chiêm ngưỡng 20+
+                                <a href=""> <strong>Khách sạn Tân cổ điển</strong> </a> đẹp ngay sau đây!
+                            </p>
+                            <div class="productDetails__appendix">
+                                <div class="appendix__toggle">
+                                    <i class="fas fa-list-ol"></i>
+                                </div>
+                                <div class="appendix__title">
+                                    <i class="fas fa-bars"></i>
+                                    MỤC LỤC
+                                </div>
+                                <nav class="appendix__nav">
+                                    <ul class="appendix__list">
+                                        <li>
+                                            <a href="#1">1. Hình ảnh Khách sạn tân cổ điển 4 tầng 1 tum đẹp</a>
+                                        </li>
+                                        <li>
+                                            <a href="#2">2. Thiết kế Khách sạn 8 tầng 1 tum kiến trúc Tân cổ điển</a>
+                                        </li>
+                                        <li>
+                                            <a href="#3">3. Phối cảnh Khách sạn kết hợp Nhà hàng Tân cổ điển cao cấp</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <h2 id="1">
+                                <strong>1. Hình ảnh Khách sạn tân cổ điển 4 tầng 1 tum đẹp</strong>
+                            </h2>
+                            <p>
+                                Công trình khách sạn mang phong cách kiến trúc Tân cổ điển châu Âu, khoác lên mình màu sơn trắng cùng màu vàng kem nhẹ nhàng
+                                mang đến vẻ đẹp quý phái và quyến rũ.
+                            </p>
+                            <div class="article__img">
+                                <img src="https://www.kientrucapollo.vn/uploads/38/biet-thu/khach-san-tan-co-dien-1/khach-san-tan-co-dien-1-1.jpg" alt="" />
+                                <strong><i>Mẫu Khách sạn đẹp 2 mặt tiền hoành tráng</i></strong>
+                            </div>
+                            <p>
+                                Toàn bộ không gian tầng 1 được ốp đá tự nhiên, màu vàng nâu đất tạo nên khối đế chắc chắn, bề thế nâng đỡ toàn bộ tòa nhà. Ngoài
+                                ra, chất liệu đá tự nhiên mang lại vẻ đẹp cao quý, khẳng định đẳng cấp của công trình khách sạn 3 sao.
+                                <br />
+                                <br />
+                                Tọa lạc tại Sóc Sơn, Hà Nội, khách sạn sở hữu 4 tầng 1 tum nổi bật với 2 mặt tiền 15m và 21m, nghệ thuật đăng đối được tận dụng
+                                triệt để nhằm tạo nên sự uy nghi và hoành tráng.
+                            </p>
+                            <div class="article__img">
+                                <img src="https://www.kientrucapollo.vn/uploads/38/biet-thu/khach-san-tan-co-dien-1/khach-san-tan-co-dien-2.jpg" alt="" />
+
+                                <strong><i>Phối cảnh Khách sạn 4 tầng 1 tum</i></strong>
+                            </div>
+                            <p>
+                                Ngoài hệ thống trụ cột vuông, thiết kế khách sạn sử dụng hệ thống trụ cột tròn hoa mỹ thể theo thức cột Corinth hoa mỹ của Hi
+                                Lạp cổ đại mang lại nét hoài cổ, đậm chất Tân cổ điển, kiến bất cứ ai đi qua cũng dừng chân chiêm ngưỡng kiến trúc khách sạn độc
+                                đáo này.
+                            </p>
+                            <br />
+                            <h2 id="2">
+                                <strong>2. Thiết kế Khách sạn 8 tầng 1 tum kiến trúc Tân cổ điển</strong>
+                            </h2>
+                            <p>
+                                Nằm nay tại thị trấn Từ Sơn, Bắc Ninh vô cùng sầm uất, Apollo Việt đã mang đến cho Anh Tới mẫu Khách sạn Tân cổ điển nguy nga,
+                                tráng lệ.
+                            </p>
+                            <div class="article__img">
+                                <img
+                                    src="https://www.kientrucapollo.vn/uploads/38/biet-thu/khach-san-tan-co-dien-1/thiet-ke-khach-san-tan-co-dien-1.jpg"
+                                    alt=""
+                                />
+                                <strong><i>Hình ảnh Khách sạn quyến rũ tại lô góc TT Từ Sơn, Bắc Ninh</i></strong>
+                            </div>
+                            <p>
+                                Với các chi tiết hoa văn nhẹ nhàng, phào chỉ, phào phân tầng sắc nét ở tầng 2, tầng 4 và tầng 7 tạo nên sự kết nối hoàn hảo giữa
+                                các khối.
+                                <br /><br />
+                                Màu sơn trắng tinh khôi càng làm cho công trình trở nên nổi bật và cuốn hút. Hệ cửa sổ cũng được sử dụng khung trắng nhằm mang
+                                lại tổng thể hài hòa, tinh tế.
+                            </p>
+                            <h2 id="3">
+                                <strong>3. Phối cảnh Khách sạn kết hợp Nhà hàng Tân cổ điển cao cấp</strong>
+                            </h2>
+                            <p>
+                                Sở hữu khuôn đất rộng lớn, ông Sâm mong muốn xây dựng 1 công trình Khách sạn, Nhà hàng nổi bật tại TP Vinh nhằm mang đến sự trải
+                                nghiệm tuyệt vời cho khách hàng.
+                            </p>
+                            <div class="article__img">
+                                <img
+                                    src="https://www.kientrucapollo.vn/uploads/38/biet-thu/khach-san-tan-co-dien-1/phoi-canh-khach-san-tan-co-dien-3.jpg"
+                                    alt=""
+                                />
+                                <strong><i>Mặt tiền Khách sạn 3 sao đẹp, lộng lẫy, kiêu sa</i></strong>
+                            </div>
+                            <p>
+                                Với mặt tiền 26m, khách sạn hướng tới phong cách tân cổ điển, các chi tiết hoa văn giản lược tối đa, sử dụng chủ yếu là các
+                                mảng, hình khối nhẹ nhàng, điểm tô các chi tiết phào chỉ sắt nét.
+                                <br /><br />
+                                Tại khu vực sảnh chính sử dụng bức chướng cầu kỳ nhằm tạo điểm nhấn ấn tượng cho công trình, nâng đỡ bởi 2 cặp trụ cột vuông
+                                tròn kết hợp, vừa nhẹ nhàng uyển chuyển vừa vững chãi bề thế.
+                            </p>
+                            <div class="article__img">
+                                <img
+                                    src="https://www.kientrucapollo.vn/uploads/38/biet-thu/khach-san-tan-co-dien-1/phoi-canh-khach-san-tan-co-dien-4.jpg"
+                                    alt=""
+                                />
+                                <strong><i>Thiết kế Khách sạn Tân cổ điển 5 tầng bề thế</i></strong>
+                            </div>
+                            <p>
+                                Hệ thống cửa sử dụng toàn bộ hệ cửa nhôm PMI nhằm mang lại không gian vô cùng sáng, sang và nổi bật, không chỉ thế hệ cửa còn
+                                giúp nhấn nhá cho phối cảnh khách sạn thêm đẹp mắt.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="related">
+                        <div class="related__title">Bài viết liên quan</div>
+                        <div class="related__list row">
+                            <div class="related__item col-lg-4 col-sm-6">
+                                <a href="">
+                                    <div class="__img">
+                                        <img src="../assets/img/project/Rectangle 354.png" alt="" />
+                                    </div>
+                                </a>
+                                <div class="related__content">
+                                    <div class="related__name goldgr-color">20+ mẫu biệt thự đẹp 3 tầng – Dẫn đầu xu hướng 2020</div>
+                                    <div class="related__des">
+                                        <p class="related__text">
+                                            <i class="far fa-user goldgr-color"></i>
+                                            Chủ đầu tư: Việt Nam
+                                        </p>
+                                        <p class="related__text">
+                                            <i class="fas fa-map-marker-alt goldgr-color"></i>
+                                            Địa điểm: Toàn quốc
+                                        </p>
+                                        <p class="related__text">
+                                            <i class="fas fa-arrows-alt goldgr-color"></i>
+                                            Mặt tiền: 5 - 10m
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="related__item col-lg-4 col-sm-6">
+                                <a href="">
+                                    <div class="related__img">
+                                        <img src="../assets/img/project/Rectangle 354.png" alt="" />
+                                    </div>
+                                </a>
+                                <div class="related__content">
+                                    <div class="related__name goldgr-color">20+ mẫu biệt thự đẹp 3 tầng – Dẫn đầu xu hướng 2020</div>
+                                    <div class="related__des">
+                                        <p class="related__text">
+                                            <i class="far fa-user goldgr-color"></i>
+                                            Chủ đầu tư: Việt Nam
+                                        </p>
+                                        <p class="related__text">
+                                            <i class="fas fa-map-marker-alt goldgr-color"></i>
+                                            Địa điểm: Toàn quốc
+                                        </p>
+                                        <p class="related__text">
+                                            <i class="fas fa-arrows-alt goldgr-color"></i>
+
+                                            Mặt tiền: 5 - 10m
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="related__item col-lg-4 col-sm-6">
+                                <a href="">
+                                    <div class="related__img">
+                                        <img src="../assets/img/project/Rectangle 354.png" alt="" />
+                                    </div>
+                                </a>
+                                <div class="related__content">
+                                    <div class="related__name goldgr-color">20+ mẫu biệt thự đẹp 3 tầng – Dẫn đầu xu hướng 2020</div>
+                                    <div class="related__des">
+                                        <p class="related__text">
+                                            <i class="far fa-user goldgr-color"></i>
+                                            Chủ đầu tư: Việt Nam
+                                        </p>
+                                        <p class="related__text">
+                                            <i class="fas fa-map-marker-alt goldgr-color"></i>
+                                            Địa điểm: Toàn quốc
+                                        </p>
+                                        <p class="related__text">
+                                            <i class="fas fa-arrows-alt goldgr-color"></i>
+
+                                            Mặt tiền: 5 - 10m
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="related__item col-lg-4 col-sm-6">
+                                <a href="">
+                                    <div class="related__img">
+                                        <img src="../assets/img/project/Rectangle 354.png" alt="" />
+                                    </div>
+                                </a>
+                                <div class="related__content">
+                                    <div class="related__name goldgr-color">20+ mẫu biệt thự đẹp 3 tầng – Dẫn đầu xu hướng 2020</div>
+                                    <div class="related__des">
+                                        <p class="related__text">
+                                            <i class="far fa-user goldgr-color"></i>
+                                            Chủ đầu tư: Việt Nam
+                                        </p>
+                                        <p class="related__text">
+                                            <i class="fas fa-map-marker-alt goldgr-color"></i>
+                                            Địa điểm: Toàn quốc
+                                        </p>
+                                        <p class="related__text">
+                                            <i class="fas fa-arrows-alt goldgr-color"></i>
+
+                                            Mặt tiền: 5 - 10m
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="related__item col-lg-4 col-sm-6">
+                                <a href="">
+                                    <div class="related__img">
+                                        <img src="../assets/img/project/Rectangle 354.png" alt="" />
+                                    </div>
+                                </a>
+                                <div class="related__content">
+                                    <div class="related__name goldgr-color">20+ mẫu biệt thự đẹp 3 tầng – Dẫn đầu xu hướng 2020</div>
+                                    <div class="related__des">
+                                        <p class="related__text">
+                                            <i class="far fa-user goldgr-color"></i>
+                                            Chủ đầu tư: Việt Nam
+                                        </p>
+                                        <p class="related__text">
+                                            <i class="fas fa-map-marker-alt goldgr-color"></i>
+                                            Địa điểm: Toàn quốc
+                                        </p>
+                                        <p class="related__text">
+                                            <i class="fas fa-arrows-alt goldgr-color"></i>
+
+                                            Mặt tiền: 5 - 10m
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="related__item col-lg-4 col-sm-6">
+                                <a href="">
+                                    <div class="related__img">
+                                        <img src="../assets/img/project/Rectangle 354.png" alt="" />
+                                    </div>
+                                </a>
+                                <div class="related__content">
+                                    <div class="related__name goldgr-color">20+ mẫu biệt thự đẹp 3 tầng – Dẫn đầu xu hướng 2020</div>
+                                    <div class="related__des">
+                                        <p class="related__text">
+                                            <i class="far fa-user goldgr-color"></i>
+                                            Chủ đầu tư: Việt Nam
+                                        </p>
+                                        <p class="related__text">
+                                            <i class="fas fa-map-marker-alt goldgr-color"></i>
+                                            Địa điểm: Toàn quốc
+                                        </p>
+                                        <p class="related__text">
+                                            <i class="fas fa-arrows-alt goldgr-color"></i>
+
+                                            Mặt tiền: 5 - 10m
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="box__border">
+                        <div class="category__title">Tìm kiếm theo loại hình nhà</div>
+                        <ul class="catalog">
+                            <li>
+                                <a href="">Thiết kế biệt thự</a>
+                            </li>
+                            <li>
+                                <a href="">Thiết kế biệt thự 3 tầng</a>
+                            </li>
+                            <li>
+                                <a href="">Thiết kế biệt thự tân cổ điển</a>
+                            </li>
+                            <li>
+                                <a href="">Biệt thự vườn</a>
+                            </li>
+                            <li>
+                                <a href="">Thiết kế nội thất</a>
+                            </li>
+                            <li>
+                                <a href="">Nội thất tân cổ điển</a>
+                            </li>
+                        </ul>
+                        <div class="category__title">Bài viết gần đây</div>
+                        <div class="row">
+                            <div class="post col-lg-12 col-sm-6">
+                                <img src="https://www.kientrucapollo.vn/uploads/49/bt21222-4-11-21/biet-thu-nha-vuon-1-tang-bia.jpg" alt="" />
+                                <div class="post__name">Chiêm ngưỡng mẫu biệt thự đẹp 1 tầng 1 lửng đẹp nhất hiện nay BT21222</div>
+                            </div>
+                            <div class="post col-lg-12 col-sm-6">
+                                <img src="https://www.kientrucapollo.vn/uploads/49/bt21222-4-11-21/biet-thu-nha-vuon-1-tang-bia.jpg" alt="" />
+                                <div class="post__name">Chiêm ngưỡng mẫu biệt thự đẹp 1 tầng 1 lửng đẹp nhất hiện nay BT21222</div>
+                            </div>
+                            <div class="post col-lg-12 col-sm-6">
+                                <img src="https://www.kientrucapollo.vn/uploads/49/bt21222-4-11-21/biet-thu-nha-vuon-1-tang-bia.jpg" alt="" />
+                                <div class="post__name">Chiêm ngưỡng mẫu biệt thự đẹp 1 tầng 1 lửng đẹp nhất hiện nay BT21222</div>
+                            </div>
+                            <div class="post col-lg-12 col-sm-6">
+                                <img src="https://www.kientrucapollo.vn/uploads/49/bt21222-4-11-21/biet-thu-nha-vuon-1-tang-bia.jpg" alt="" />
+                                <div class="post__name">Chiêm ngưỡng mẫu biệt thự đẹp 1 tầng 1 lửng đẹp nhất hiện nay BT21222</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="footer">
+            <div class="footer__container container">
+                <div class="row row-cols-lg-5">
+                    <div class="col-lg col-sm-4 item">
+                        <div class="footer__title">Thiết kế kiến trúc</div>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="" class="footer__link">Biệt thự đẹp</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">Mẫu nhà đẹp</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">Thiết kế biệt thự</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">Thiết kế nhà đẹp</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg col-sm-4 item">
+                        <div class="footer__title">Trang trí nội thất</div>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="" class="footer__link">Nội thất cổ điển</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">Nội thất tân cổ điển</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">Nội thất biệt thự</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">Phòng khách</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">Phòng bếp</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">Nội thất phòng ngủ</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg col-sm-4 item">
+                        <div class="footer__title">Thi công công trình</div>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="" class="footer__link">Xây nhà trọn đời</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">Thi công nội thất</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg col-sm-4 item">
+                        <div class="footer__title">Sản phẩm nội thất</div>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="" class="footer__link">Gạch ốp lát cao cấp</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">Sàn gỗ nhập khẩu</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">Thiết bị vệ sinh nhập khẩu</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">Sản phẩm gỗ óc chó</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg col-sm-4 item">
+                        <div class="footer__title">Phong thuỷ nhà ở</div>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="" class="footer__link">Xem hướng nhà</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">Xem tuổi nhà</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <hr />
+                <div class="row">
+                    <div class="col-lg-2 col-sm-2">
+                        <img src="../assets/img/logo-final 1.png" alt="" />
+                    </div>
+                    <div class="col-lg-5 col-sm-5">
+                        <div class="footer__name goldgr-color">Lorem ipsum dolor sit amet, consectetur</div>
+                        <p><b>Địa chỉ:</b>Lorem ipsum dolor sit amet, consectetur adipiscing elit dolor sit ame</p>
+                        <br />
+                        <p><b>Hotline:</b>0123.456.789</p>
+                        <br />
+                        <p><b>Email:</b>suppor@info.com</p>
+                        <div class="list__icon">
+                            <div class="icon__item">
+                                <i class="fab fa-facebook-f"></i>
+                            </div>
+                            <div class="icon__item">
+                                <i class="fab fa-twitter"></i>
+                            </div>
+                            <div class="icon__item">
+                                <i class="fab fa-instagram-square"></i>
+                            </div>
+                            <div class="icon__item"><i class="fab fa-youtube"></i></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-1 space"></div>
+                    <div class="col-lg-4 fanpage col-sm-5">
+                        <p class="">fanpage</p>
+                        <iframe
+                            src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FTropicalforest.vn%2F&tabs&width=340&height=130&small_header=false&adapt_container_width=false&hide_cover=false&show_facepile=false&appId"
+                            width="100%"
+                            height="auto"
+                            style="border: none; overflow: hidden"
+                            scrolling="no"
+                            frameborder="0"
+                            allowfullscreen="true"
+                            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                        ></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="copyright">© 2021 KientrucnoithatLT. Designed by VicoGroup. All Rights Reserved.</div>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+        <script src="../assets/js/jquery.star-rating-svg.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.0/js/bootstrap.min.js"
+            integrity="sha512-XKa9Hemdy1Ui3KSGgJdgMyYlUg1gM+QhL6cnlyTe2qzMCYm4nAZ1PsVerQzTTXzonUR+dmswHqgJPuwCq1MaAg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script src="../assets/js/main.js"></script>
+    </body>
+</html>

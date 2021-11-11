@@ -1,0 +1,85 @@
+.service {
+    padding-bottom: 60px;
+
+    background: #18120b;
+    @include maxWidth(768px) {
+        padding-bottom: 40px;
+    }
+    &__content {
+        display: flex;
+        column-gap: 60px;
+        justify-content: center;
+        @include maxWidth(768px) {
+            column-gap: 0;
+        }
+        @include maxWidth(576px) {
+            display: grid;
+            justify-content: flex-start;
+            grid-auto-columns: max-content;
+            grid-auto-flow: column;
+            grid-gap: 0;
+            overflow: auto;
+            overflow-y: hidden;
+            -webkit-overflow-scrolling: touch;
+            scroll-padding: 1rem;
+            grid-template-columns: unset;
+        }
+    }
+    &__item {
+        position: relative;
+        padding: 20px 17px;
+        max-width: 329px;
+        max-height: 450px;
+        height: 450px;
+        @include maxWidth(768px) {
+            height: 400px;
+            margin-right: 20px;
+            &:last-child {
+                margin: 0;
+            }
+        }
+
+        &::before {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-image: url("../img/service/Rectangle\ 377.png");
+            z-index: 1;
+        }
+    }
+    .service__img {
+        position: relative;
+        max-width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 2;
+    }
+
+    .bg-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 72%;
+        height: 46px;
+        background: #555555;
+        mix-blend-mode: multiply;
+        transform: translate(-50%, -50%);
+        z-index: 4;
+    }
+    &__name {
+        text-transform: uppercase;
+        font-family: $font-heading;
+        font-weight: 700;
+        font-size: 16px;
+        position: absolute;
+        z-index: 5;
+        width: 72%;
+        text-align: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
