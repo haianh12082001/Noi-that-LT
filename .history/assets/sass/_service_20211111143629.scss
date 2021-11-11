@@ -85,13 +85,15 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        background: #555555;
         background: rgba(0, 0, 0, 0.65);
         p {
             text-align: center;
         }
     }
 }
-.service__item:hover .service__name p {
+
+.service__item:hover .service__name {
     width: 100%;
     animation: typing 2s, blink 0.5s step-end infinite alternate;
     animation-timing-function: ease-in-out;

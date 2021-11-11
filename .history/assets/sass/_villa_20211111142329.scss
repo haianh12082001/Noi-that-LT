@@ -86,9 +86,20 @@
     }
     &__img:hover .villa__name {
         width: 100%;
-        animation: typing 2s, blink 0.5s step-end infinite alternate;
+        animation: typing 3s, blink 0.5s step-end infinite alternate;
         animation-timing-function: ease-in-out;
         white-space: nowrap;
         overflow: hidden;
+    }
+}
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
     }
 }
