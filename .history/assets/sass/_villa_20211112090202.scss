@@ -66,17 +66,28 @@
         display: flex;
         justify-content: center;
         position: relative;
-        background-image: url("../img/Group\ 6.png");
-        background-repeat: no-repeat;
-        background-position: center;
         z-index: 2;
         transition: all 0.3s ease;
-        &:hover {
-            transform: scaleX(1.1);
-        }
+        // &:hover {
+        //     transform: scaleX(1.1);
+        // }
     }
     &__link {
         padding: 8px;
+        border-image: linear-gradient(#d4ab71, #fbe499, #d1a86f) 1;
+        border-width: 0.5px;
+        border-style: solid;
+        position: relative;
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            z-index: 1;
+            width: 26 px;
+            height: 27 px;
+            transform: scaleX(0.5774) rotate(-45deg);
+            background-color: #18120b;
+        }
     }
     &__img:hover.villa__img img {
         transform: scale(1.2);

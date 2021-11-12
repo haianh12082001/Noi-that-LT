@@ -36,6 +36,7 @@
         background-origin: padding-box, border-box;
         border-radius: 3px;
         border-width: 2px;
+        position: relative;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -43,7 +44,7 @@
         transition: all 0.5s;
         i {
             padding: 8px;
-            font-size: 12px;
+            font-size: 10px;
         }
         &:hover {
             transform: rotateY(180deg);

@@ -66,9 +66,6 @@
         display: flex;
         justify-content: center;
         position: relative;
-        background-image: url("../img/Group\ 6.png");
-        background-repeat: no-repeat;
-        background-position: center;
         z-index: 2;
         transition: all 0.3s ease;
         &:hover {
@@ -76,7 +73,23 @@
         }
     }
     &__link {
-        padding: 8px;
+        padding: 5px 15px;
+        border-width: 0.5px;
+        border-style: solid;
+        border-image: linear-gradient(#d4ab71, #fbe499, #d1a86f) 1;
+        border-left: transparent;
+        border-right: transparent;
+        position: relative;
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            position: absolute;
+            border-width: 17px 14px;
+            border-style: solid;
+            border-image: linear-gradient(#d4ab71, #fbe499, #d1a86f) 1;
+        }
     }
     &__img:hover.villa__img img {
         transform: scale(1.2);

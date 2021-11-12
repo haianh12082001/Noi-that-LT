@@ -66,9 +66,6 @@
         display: flex;
         justify-content: center;
         position: relative;
-        background-image: url("../img/Group\ 6.png");
-        background-repeat: no-repeat;
-        background-position: center;
         z-index: 2;
         transition: all 0.3s ease;
         &:hover {
@@ -76,11 +73,17 @@
         }
     }
     &__link {
-        padding: 8px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
     }
-    &__img:hover.villa__img img {
-        transform: scale(1.2);
-    }
+    // &__img:hover.villa__img img {
+    //     transform: scale(1.2);
+    // }
     &__img:hover .villa__name {
         width: 100%;
         animation: typing 2s, blink 0.5s step-end infinite alternate;

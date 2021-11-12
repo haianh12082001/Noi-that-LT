@@ -30,7 +30,9 @@
         width: 27px;
         height: 27px;
         box-sizing: border-box;
-        background: linear-gradient(#2e1501, #2e1501), linear-gradient(#d4ab71, #fbe499, #d1a86f);
+        // background: linear-gradient(#2e1501, #2e1501), linear-gradient(#d4ab71, #fbe499, #d1a86f);
+
+        background: linear-gradient(#222, #222), linear-gradient(to right, red, purple);
         border: 3px solid transparent;
         background-repeat: no-repeat;
         background-origin: padding-box, border-box;
@@ -43,7 +45,7 @@
         transition: all 0.5s;
         i {
             padding: 8px;
-            font-size: 12px;
+            font-size: 10px;
         }
         &:hover {
             transform: rotateY(180deg);

@@ -29,13 +29,12 @@
     &__item {
         width: 27px;
         height: 27px;
+        // border-radius: 3px;
+        // border-width: 0.5px;
+        // border-style: solid;
         box-sizing: border-box;
-        background: linear-gradient(#2e1501, #2e1501), linear-gradient(#d4ab71, #fbe499, #d1a86f);
-        border: 3px solid transparent;
-        background-repeat: no-repeat;
-        background-origin: padding-box, border-box;
-        border-radius: 3px;
-        border-width: 2px;
+        border: linear-gradient(#d4ab71, #fbe499, #d1a86f);
+        border: 3px solid;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -43,7 +42,7 @@
         transition: all 0.5s;
         i {
             padding: 8px;
-            font-size: 12px;
+            font-size: 10px;
         }
         &:hover {
             transform: rotateY(180deg);

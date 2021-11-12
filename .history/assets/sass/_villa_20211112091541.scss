@@ -71,9 +71,9 @@
         background-position: center;
         z-index: 2;
         transition: all 0.3s ease;
-        &:hover {
-            transform: scaleX(1.1);
-        }
+        // &:hover {
+        //     transform: scaleX(1.1);
+        // }
     }
     &__link {
         padding: 8px;
