@@ -91,9 +91,10 @@
             border-radius: 3px;
             color: #fff;
             padding-left: 20px;
-            &::placeholder {
-                color: #e4e4e4;
-                opacity: 1;
+            ::placeholder {
+                /* chạy tốt trên Chrome, Firefox, Opera, Safari 10.1+ */
+                color: #e4e4e4 !important;
+                opacity: 1; /* Firefox */
             }
         }
     }

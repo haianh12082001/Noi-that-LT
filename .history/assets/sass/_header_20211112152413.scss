@@ -60,6 +60,14 @@
             }
         }
     }
+    &__logo {
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            background-image: url(../img/border-logo.png);
+        }
+    }
     &__bg--logo {
         position: absolute;
         top: -44px;
@@ -86,8 +94,8 @@
             left: 50%;
             transform: translateX(-50%);
             top: 5px;
-            width: 110px;
-            height: 80px;
+            width: 120px;
+            height: 90px;
         }
         @include maxWidth(576px) {
             width: 90px;

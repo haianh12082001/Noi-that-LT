@@ -30,7 +30,7 @@
         width: 27px;
         height: 27px;
         box-sizing: border-box;
-        background: linear-gradient(#18120b, #18120b), linear-gradient(#d4ab71, #fbe499, #d1a86f);
+        background: linear-gradient(#2e1501, #2e1501), linear-gradient(#d4ab71, #fbe499, #d1a86f);
         border: 1px solid transparent;
         background-repeat: no-repeat;
         background-origin: padding-box, border-box;
@@ -70,7 +70,6 @@
     }
     &__seach {
         position: relative;
-        margin-right: 8px;
         button {
             border: none;
             background: transparent;
@@ -91,10 +90,6 @@
             border-radius: 3px;
             color: #fff;
             padding-left: 20px;
-            &::placeholder {
-                color: #e4e4e4;
-                opacity: 1;
-            }
         }
     }
 }

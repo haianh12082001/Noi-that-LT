@@ -30,7 +30,9 @@
         width: 27px;
         height: 27px;
         box-sizing: border-box;
-        background: linear-gradient(#18120b, #18120b), linear-gradient(#d4ab71, #fbe499, #d1a86f);
+
+        background: linear-gradient(#d4ab71, #fbe499, #d1a86f);
+        background: #2e1501;
         border: 1px solid transparent;
         background-repeat: no-repeat;
         background-origin: padding-box, border-box;
@@ -91,10 +93,6 @@
             border-radius: 3px;
             color: #fff;
             padding-left: 20px;
-            &::placeholder {
-                color: #e4e4e4;
-                opacity: 1;
-            }
         }
     }
 }
