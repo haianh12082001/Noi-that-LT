@@ -1,0 +1,100 @@
+.topbar {
+    background: #2e1501;
+    padding: 7px 0;
+    position: sticky;
+    z-index: 99;
+    top: 0;
+    color: #fff;
+    border-bottom: 1px solid #663e12;
+    @include maxWidth(768px) {
+        display: none;
+    }
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__left {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__right {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__icon {
+        display: flex;
+        column-gap: 5px;
+    }
+    &__item {
+        width: 27px;
+        height: 27px;
+        border-radius: 3px;
+        border-style: solid;
+        border-width: 0.5px;
+        border-image: linear-gradient(#d4ab71, #fbe499, #d1a86f) 1;
+        background-color: #18120b;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // margin-right: 5px;
+        transition: all 0.5s;
+        i {
+            padding: 8px;
+            font-size: 12px;
+        }
+        &:hover {
+            transform: rotateY(180deg);
+        }
+    }
+    &__phone {
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        margin-right: 60px;
+        i {
+            font-size: 13px;
+            margin-right: 8px;
+        }
+    }
+    &__email {
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        i {
+            font-size: 13px;
+            margin-right: 8px;
+        }
+    }
+    &__seach {
+        position: relative;
+        margin-right: 8px;
+        button {
+            border: none;
+            background: transparent;
+            position: absolute;
+            top: 50%;
+            right: 14px;
+            transform: translateY(-50%);
+        }
+        input {
+            // position: absolute;
+            font-size: 12px;
+            width: 269px;
+            height: 27px;
+            max-width: 269px;
+            border-radius: 3px;
+            background: #6a4113;
+            border: none;
+            border-radius: 3px;
+            color: #fff;
+            padding-left: 20px;
+            &::placeholder {
+                color: #e4e4e4;
+                opacity: 1;
+            }
+        }
+    }
+}

@@ -1,0 +1,91 @@
+.villa {
+    background-image: url("../img/villa/Group\ 254.png");
+    padding-bottom: 64px;
+    position: relative;
+    z-index: 2;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #2b1d0d;
+        mix-blend-mode: multiply;
+        z-index: -1;
+    }
+    &__container {
+        padding: 0 60px;
+        @include maxWidth(768px) {
+            padding: 0 15px;
+        }
+    }
+    &__item {
+        height: 301px;
+        position: relative;
+        margin-bottom: 10px;
+    }
+    &__img {
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            height: 46px;
+            width: 100%;
+            bottom: 1px;
+            left: 0px;
+            right: 0px;
+            background: #555555;
+            mix-blend-mode: multiply;
+            z-index: 2;
+        }
+    }
+    &__img img {
+        width: 100%;
+        height: 100%;
+        border: 1px solid;
+        object-fit: cover;
+        border-width: 0.5px;
+        border-style: solid;
+        border-image: linear-gradient(#d4ab71, #fbe499, #d1a86f) 1;
+        position: relative;
+        transition: all 0.3s linear;
+    }
+    &__name {
+        position: absolute;
+        content: "";
+        bottom: 13px;
+        left: 22px;
+        line-height: 18px;
+        font-size: 16px;
+        font-weight: 600;
+        z-index: 3;
+    }
+    &__button {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        background-image: url("../img/Group\ 6.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        z-index: 2;
+        transition: all 0.3s ease;
+        &:hover {
+            transform: scaleX(1.1);
+        }
+    }
+    &__link {
+        padding: 8px;
+    }
+    &__img:hover.villa__img img {
+        transform: scale(1.2);
+    }
+    &__img:hover .villa__name {
+        width: 100%;
+        animation: typing 2s, blink 0.5s step-end infinite alternate;
+        animation-timing-function: ease-in-out;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    @include effects;
+}

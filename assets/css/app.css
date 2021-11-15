@@ -123,35 +123,6 @@ body {
   z-index: 88;
 }
 
-.img__effects img {
-  transition: transform 0.8s ease;
-}
-
-.img__effects::before {
-  position: absolute;
-  top: 0;
-  left: -90%;
-  z-index: 2;
-  display: block;
-  content: "";
-  width: 50%;
-  height: 100%;
-  background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
-  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
-  -webkit-transform: skewX(-25deg);
-  transform: skewX(-25deg);
-}
-
-.img__effects:hover::before {
-  -webkit-animation: shine 1.5s infinite;
-  animation: shine 1.5s infinite;
-}
-
-.img__effects {
-  overflow: hidden;
-  position: relative;
-}
-
 .gutters-5 {
   margin-left: -5px;
   margin-right: -5px;
@@ -214,13 +185,11 @@ body {
 .topbar__item {
   width: 27px;
   height: 27px;
-  box-sizing: border-box;
-  background: linear-gradient(#18120b, #18120b), linear-gradient(#d4ab71, #fbe499, #d1a86f);
-  border: 1px solid transparent;
-  background-repeat: no-repeat;
-  background-origin: padding-box, border-box;
   border-radius: 3px;
-  border-width: 1px;
+  border-style: solid;
+  border-width: 0.5px;
+  border-image: linear-gradient(#d4ab71, #fbe499, #d1a86f) 1;
+  background-color: #18120b;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -613,6 +582,28 @@ body {
   background-image: url("../img/service/Rectangle 377.png");
   z-index: 1;
 }
+.service__item {
+  overflow: hidden;
+  position: relative;
+}
+.service__item img {
+  transition: transform 0.8s ease;
+}
+.service__item::before {
+  position: absolute;
+  top: 0;
+  left: -90%;
+  z-index: 2;
+  display: block;
+  content: "";
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+  transform: skewX(-25deg);
+}
+.service__item:hover::before {
+  animation: shine 1.5s infinite;
+}
 .service .service__img {
   position: relative;
   z-index: 2;
@@ -779,6 +770,44 @@ body {
 .project__content {
   padding-bottom: 20px;
 }
+.project__img {
+  overflow: hidden;
+  position: relative;
+}
+.project__img img {
+  transition: transform 0.8s ease;
+}
+.project__img::before {
+  position: absolute;
+  top: 0;
+  left: -90%;
+  z-index: 2;
+  display: block;
+  content: "";
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+  transform: skewX(-25deg);
+}
+.project__img:hover::before {
+  animation: shine 1.5s infinite;
+}
+
+.project__img img {
+  width: 100%;
+  height: 202px;
+  display: block;
+}
+@media screen and (max-width: 768px) {
+  .project__img img {
+    height: 254px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .project__img img {
+    height: 250px;
+  }
+}
 
 .project__text {
   display: flex;
@@ -791,23 +820,6 @@ body {
 }
 .project__text i {
   margin-right: 6px;
-}
-
-.project__img img {
-  width: 100%;
-  height: 202px;
-  display: block;
-  object-fit: cover;
-}
-@media screen and (max-width: 768px) {
-  .project__img img {
-    height: 254px;
-  }
-}
-@media screen and (max-width: 480px) {
-  .project__img img {
-    height: 250px;
-  }
 }
 
 .feedback {
@@ -844,9 +856,18 @@ body {
 }
 .feedback__img img {
   width: 100%;
-  max-height: 244px;
   height: 244px;
   border-radius: 8px;
+}
+@media screen and (max-width: 768px) {
+  .feedback__img img {
+    height: 142px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .feedback__img img {
+    height: 244px;
+  }
 }
 .feedback__img {
   position: relative;
@@ -1193,9 +1214,30 @@ body {
   font-weight: 700;
   margin-bottom: 20px;
 }
+.relatedPost__img {
+  overflow: hidden;
+  position: relative;
+}
 .relatedPost__img img {
   width: 100%;
-  height: 180px;
+}
+.relatedPost__img img {
+  transition: transform 0.8s ease;
+}
+.relatedPost__img::before {
+  position: absolute;
+  top: 0;
+  left: -90%;
+  z-index: 2;
+  display: block;
+  content: "";
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+  transform: skewX(-25deg);
+}
+.relatedPost__img:hover::before {
+  animation: shine 1.5s infinite;
 }
 
 .productDetails__appendix {

@@ -1,0 +1,34 @@
+@mixin maxWidth($q) {
+    @media screen and (max-width: $q) {
+        @content;
+    }
+}
+@mixin minWidth($q) {
+    @media screen and (min-width: $q) {
+        @content;
+    }
+}
+@mixin effects {
+    &__img {
+        overflow: hidden;
+        position: relative;
+        img {
+            transition: transform 0.8s ease;
+        }
+        &::before {
+            position: absolute;
+            top: 0;
+            left: -90%;
+            z-index: 2;
+            display: block;
+            content: "";
+            width: 50%;
+            height: 100%;
+            background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+            transform: skewX(-25deg);
+        }
+        &:hover::before {
+            animation: shine 1.5s infinite;
+        }
+    }
+}
